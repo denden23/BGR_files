@@ -1,0 +1,44 @@
+.navbar-default{
+	background-color : 	#09a4ff;
+}
+.page{
+	background-color : 	#09a4ff;
+}
+.dropdown-toggle{
+	color :white;
+	
+}
+#home_button:selected {
+	color :black
+}
+.div-wrapper {
+	padding: 1%
+}
+#tbl_sampling_information {
+	font-family:serif
+}
+
+.h5 , h5 {
+	font-family:serif
+}
+.h4 , h4 {
+	font-family:serif
+}
+.modal {
+	font-family:serif
+}
+.label {
+	padding-right:50%
+}
+.btn-primary.btn-outline{
+	text-align:left
+}
+div.dataTables_length {
+			float:left;
+		}
+div.dataTables_filter {
+	float:right;
+}
+div.dataTables_paginate.paging_simple_numbers {
+	float:right;
+}
