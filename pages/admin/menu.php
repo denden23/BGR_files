@@ -11,6 +11,19 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="purchase_order.php">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Purchase Order</span>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="product.php">
+              <i class="menu-icon mdi mdi-widgets"></i>
+              <span class="menu-title">Product</span>
+            </a>
+          </li>
+		  
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-wrench"></i>
@@ -36,11 +49,20 @@
 				<li class="nav-item">
                   <a class="nav-link" href="item.php">Item</a>
                 </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="supplier.php">Supplier</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="customer_info.php">Customer Information</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="user_profile.php">User Profile</a>
+                </li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../../pages/forms/basic_elements.html">
+            <a class="nav-link" href="system_logs.php" >
               <i class="menu-icon mdi mdi-backup-restore"></i>
               <span class="menu-title">System Logs</span>
             </a>

@@ -66,7 +66,7 @@
 				</thead>
 				<tbody>
 					<?php
-						$sql_list1 = "Select b.c_description, a.sc_id ,a.sc_description 
+						$sql_list1 = "Select b.c_description, a.sc_c_id , a.sc_id ,a.sc_description 
 						from tbl_sub_category a, tbl_category b where b.c_id=a.sc_c_id";
 						$i = 1;
 						foreach ($pdo->query($sql_list1) as $row_list1) {
@@ -76,8 +76,8 @@
 							echo '<td><font>'. $row_list1['sc_description'] . '</td>';
 							?>
 							<td style="padding:0%">
-							&nbsp;<button type="button" class="btn btn-icons btn-inverse-success btn-sm" title="Edit Sub-Category" onclick="edit_sub_category('<?php echo $row_list1['c_id'] ?>','<?php echo $row_list1['c_description'] ?>');" ><i class="mdi mdi-pencil"></i></button>&nbsp;
-							&nbsp;<button type="button" class="btn btn-icons btn-inverse-danger btn-sm" title="Delete Sub-Category" onclick="delete_sub_category('<?php echo $row_list1['c_id'] ?>');"  ><i class="mdi mdi-delete"></i></button>&nbsp;
+							&nbsp;<button type="button" class="btn btn-icons btn-inverse-success btn-sm" title="Edit Sub-Category" onclick="edit_sub_category('<?php echo $row_list1['sc_c_id'] ?>','<?php echo $row_list1['sc_id'] ?>','<?php echo $row_list1['sc_description'] ?>');" ><i class="mdi mdi-pencil"></i></button>&nbsp;
+							&nbsp;<button type="button" class="btn btn-icons btn-inverse-danger btn-sm" title="Delete Sub-Category" onclick="delete_sub_category('<?php echo $row_list1['sc_id'] ?>');"  ><i class="mdi mdi-delete"></i></button>&nbsp;
 							</td>
 							<?php
 							echo '</tr>';

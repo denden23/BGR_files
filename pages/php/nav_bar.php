@@ -11,10 +11,10 @@
         
         <ul class="navbar-nav navbar-nav-right">
           
-          <li class="nav-item dropdown d-none d-xl-inline-block">
+          <li class="nav-item dropdown d-xl-inline">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text">Hello, Richard V.Welsh !</span>
-              <img class="img-xs rounded-circle" src="../../images/faces/face1.jpg" alt="Profile image">
+              <span class="profile-text">Hello, <?php  echo fn_get_user_info('up_fname').' '. fn_get_user_info('up_lname'); ?></span>
+              <img class="img-xs rounded-circle" src="../../images/faces/<?php  echo fn_get_user_info('up_image')?>" alt="Profile image">
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0">

@@ -26,8 +26,8 @@
 	{
 		include("mysqlhelper.php");
 		$query = $mysqlhelper->query("SELECT $field1
-									FROM tbl_user 
-									WHERE u_id='".$_SESSION['U_ID']."'");
+									FROM tbl_user_profile up , tbl_user u
+									WHERE u.u_id='".$_SESSION['U_ID']."'");
 		$rquery = $query->fetch(PDO::FETCH_NUM);
 		return $rquery[0];
 		

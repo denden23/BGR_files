@@ -3,7 +3,7 @@
         <div class="modal-dialog" align="center" >
             <div class="modal-content" >
                 <div class="modal-header">
-				<h5 class="modal-title" id="myModalLabel">Edit Category</h5>
+				<h5 class="modal-title" id="myModalLabel">Edit Sub-Category</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                        
                 </div>
@@ -14,11 +14,27 @@
 			
                       </p>
                       <form class="forms-sample">
-                        <div class="form-group row">
-						 <input type="number" class="form-control" id="txt_edit_category_id" hidden readonly >
-                          <label for="exampleInputEmail2" class="col-sm-3 col-form-label">* Description : </label>
+					  <input readonly hidden id="txt_sc_id" />
+					  <div class="form-group row">
+					     <label for="exampleInputEmail2" class="col-sm-3 col-form-label">* Category : </label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" id="txt_edit_category" placeholder="Enter Description">
+                            <select type="text" class="form-control" id="txt_edit_sc_category">
+							<option></option>
+							<?php 
+							$sql_cat = $pdo->query("Select * from tbl_category order by c_description ASC");
+							foreach($sql_cat as $row_cat){
+								?>
+								<option value="<?php echo $row_cat['c_id']?>" ><?php echo $row_cat['c_description']?></option>
+								<?php
+							}
+							?>
+							</select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+						 <label for="exampleInputEmail2" class="col-sm-3 col-form-label">* Description : </label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="txt_edit_sub_desc" placeholder="Enter Description">
                           </div>
                         </div>
                        
