@@ -2,7 +2,7 @@
 
 	$host ='localhost';
 	$uname='root';
-	$pword='';
+	$pword='root';
 	//$pword='';
 	$dbase = 'db_bgr';
 	

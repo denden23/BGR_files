@@ -8,7 +8,7 @@
       private static $dbName = 'db_bgr' ;
       private static $dbHost = 'localhost' ;
       private static $dbUsername = 'root';
-      private static $dbUserPassword = '';
+      private static $dbUserPassword = 'root';
       private static $cont  = null;
       
       public function __construct() {
